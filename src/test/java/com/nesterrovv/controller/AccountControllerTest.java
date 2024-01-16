@@ -1,7 +1,7 @@
-package com.nesterrovv.vpnaccount.controller;
+package com.nesterrovv.controller;
 
-import com.nesterrovv.vpnaccount.serivce.AccountService;
-import com.nesterrovv.vpnaccount.entity.Account;
+import com.nesterrovv.entity.Account;
+import com.nesterrovv.serivce.AccountService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

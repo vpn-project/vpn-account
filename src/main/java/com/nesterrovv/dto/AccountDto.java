@@ -1,6 +1,6 @@
-package com.nesterrovv.vpnaccount.dto;
+package com.nesterrovv.dto;
 
-import com.nesterrovv.vpnaccount.entity.Account;
+import com.nesterrovv.entity.Account;
 import java.util.Objects;
 import java.util.Set;
 

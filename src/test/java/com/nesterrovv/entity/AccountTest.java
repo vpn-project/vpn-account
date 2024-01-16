@@ -1,4 +1,4 @@
-package com.nesterrovv.vpnaccount.entity;
+package com.nesterrovv.entity;
 
 import org.junit.jupiter.api.Test;
 
