@@ -1,6 +1,6 @@
-package com.nesterrovv.vpn.account.repository;
+package com.nesterrovv.vpnaccount.repository;
 
-import com.nesterrovv.vpn.account.entity.Account;
+import com.nesterrovv.vpnaccount.entity.Account;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface AccountRepository extends JpaRepository<Account, Long> {

@@ -1,7 +1,7 @@
-package com.nesterrovv.vpn.account.serivce;
+package com.nesterrovv.vpnaccount.serivce;
 
-import com.nesterrovv.vpn.account.entity.Account;
-import com.nesterrovv.vpn.account.repository.AccountRepository;
+import com.nesterrovv.vpnaccount.entity.Account;
+import com.nesterrovv.vpnaccount.repository.AccountRepository;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;

@@ -1,6 +1,6 @@
-package com.nesterrovv.vpn.account.dto;
+package com.nesterrovv.vpnaccount.dto;
 
-import com.nesterrovv.vpn.account.entity.Account;
+import com.nesterrovv.vpnaccount.entity.Account;
 import org.junit.jupiter.api.Test;
 
 import java.util.Collections;

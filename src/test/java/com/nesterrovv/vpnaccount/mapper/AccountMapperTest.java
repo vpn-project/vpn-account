@@ -1,7 +1,7 @@
-package com.nesterrovv.vpn.account.mapper;
+package com.nesterrovv.vpnaccount.mapper;
 
-import com.nesterrovv.vpn.account.dto.AccountDto;
-import com.nesterrovv.vpn.account.entity.Account;
+import com.nesterrovv.vpnaccount.dto.AccountDto;
+import com.nesterrovv.vpnaccount.entity.Account;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -1,4 +1,4 @@
-package com.nesterrovv.vpn;
+package com.nesterrovv;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
