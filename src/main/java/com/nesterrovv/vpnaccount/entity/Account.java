@@ -1,4 +1,4 @@
-package com.nesterrovv.entity;
+package com.nesterrovv.vpnaccount.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

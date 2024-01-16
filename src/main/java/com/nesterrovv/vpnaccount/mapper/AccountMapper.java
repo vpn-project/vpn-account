@@ -1,7 +1,7 @@
-package com.nesterrovv.mapper;
+package com.nesterrovv.vpnaccount.mapper;
 
-import com.nesterrovv.dto.AccountDto;
-import com.nesterrovv.entity.Account;
+import com.nesterrovv.vpnaccount.dto.AccountDto;
+import com.nesterrovv.vpnaccount.entity.Account;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 

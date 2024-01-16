@@ -1,8 +1,9 @@
-package com.nesterrovv.controller;
+package com.nesterrovv.vpnaccount.controller;
 
-import com.nesterrovv.serivce.AccountService;
-import com.nesterrovv.entity.Account;
+import com.nesterrovv.vpnaccount.serivce.AccountService;
+import com.nesterrovv.vpnaccount.entity.Account;
 import java.util.Collections;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
