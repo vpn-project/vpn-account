@@ -63,7 +63,7 @@ public class AccountController {
 
     @DeleteMapping("/{id}")
     public Mono<ResponseEntity<Void>> deleteAccount(@PathVariable Long id) {
-        return accountService.delete(id).then(Mono.fromCallable(() 
+        return accountService.delete(id).then(Mono.fromCallable(()
                                 -> new ResponseEntity<>(HttpStatus.OK)));
     }
 
