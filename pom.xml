@@ -178,8 +178,14 @@
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-resolver-dns-native-macos</artifactId>
+            <version>4.1.105.Final</version>
+            <scope>runtime</scope>
             <classifier>osx-x86_64</classifier>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
+            <version>3.2.1</version>
         </dependency>
     </dependencies>
 
