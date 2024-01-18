@@ -100,6 +100,6 @@ public class AccountService {
     }
 
     private <T> Mono<T> async(Callable<T> callable) {
-        return Mono.fromCallable(callable).publishOn(scheduler);
+        return Mono.fromCallable(callable).publishOn(Schedulers.boundedElastic());
     }
 }

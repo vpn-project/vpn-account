@@ -28,15 +28,15 @@ public class AccountController {
     }
 
     @PostMapping
-    public Mono<ResponseEntity<Account>> createAccount(
+    public ResponseEntity<Account> createAccount(
         @RequestParam String username,
         @RequestParam boolean isMainAccount) {
         return accountService.createAccount(username, isMainAccount, Collections.emptySet())
-            .map(account -> new ResponseEntity<>(account, HttpStatus.CREATED));
+            .map(account -> new ResponseEntity<>(account, HttpStatus.CREATED)).block();
     }
 
     @GetMapping("/{id}")
-    public Mono<ResponseEntity<Account>> getAccountById(@PathVariable Long id) {
+    public ResponseEntity<?> getAccountById(@PathVariable Long id) {
         return accountService.findById(id).map(accountOptional -> {
             if (accountOptional.isPresent()) {
                 return new ResponseEntity<>(accountOptional.get(), HttpStatus.OK);
@@ -44,7 +44,7 @@ public class AccountController {
                 return new ResponseEntity<>(HttpStatus.NOT_FOUND);
 
             }
-        });
+        }).block();
     }
 
     @PostMapping("/{id}/add-linked-account")
