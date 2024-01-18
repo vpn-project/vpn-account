@@ -1,9 +1,8 @@
 package com.nesterrovv.vpnaccount.controller;
 
-import com.nesterrovv.vpnaccount.serivce.AccountService;
 import com.nesterrovv.vpnaccount.entity.Account;
+import com.nesterrovv.vpnaccount.serivce.AccountService;
 import java.util.Collections;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -49,18 +48,23 @@ public class AccountController {
     }
 
     @PostMapping("/{id}/add-linked-account")
-    public Mono<ResponseEntity<String>> addLinkedAccount(@PathVariable Long id, @RequestBody Account linkedAccount) {
-        return accountService.addLinkedAccount(id, linkedAccount).map(result -> new ResponseEntity<>(result, HttpStatus.OK));
+    public Mono<ResponseEntity<String>> addLinkedAccount(@PathVariable Long id,
+                                                         @RequestBody Account linkedAccount) {
+        return accountService.addLinkedAccount(id, linkedAccount)
+            .map(result -> new ResponseEntity<>(result, HttpStatus.OK));
     }
 
     @PostMapping("/{id}/remove-linked-account")
-    public Mono<ResponseEntity<String>> removeLinkedAccount(@PathVariable Long id, @RequestBody Account linkedAccount) {
-        return accountService.removeLinkedAccount(id, linkedAccount).map(result -> new ResponseEntity<>(result, HttpStatus.OK));
+    public Mono<ResponseEntity<String>> removeLinkedAccount(@PathVariable Long id,
+                                                            @RequestBody Account linkedAccount) {
+        return accountService.removeLinkedAccount(id, linkedAccount)
+            .map(result -> new ResponseEntity<>(result, HttpStatus.OK));
     }
 
     @DeleteMapping("/{id}")
     public Mono<ResponseEntity<Void>> deleteAccount(@PathVariable Long id) {
-        return accountService.delete(id).then(Mono.fromCallable(() -> new ResponseEntity<>(HttpStatus.OK)));
+        return accountService.delete(id).then(Mono.fromCallable(() 
+                                -> new ResponseEntity<>(HttpStatus.OK)));
     }
 
 }
