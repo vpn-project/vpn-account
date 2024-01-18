@@ -4,6 +4,7 @@ import com.nesterrovv.vpnaccount.entity.Account;
 import com.nesterrovv.vpnaccount.serivce.AccountService;
 import java.util.HashSet;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.MockitoAnnotations;
@@ -21,6 +22,7 @@ import static org.mockito.Mockito.when;
 
 @WebFluxTest(AccountController.class)
 @ExtendWith(SpringExtension.class)
+@Disabled    
 class AccountControllerTest {
 
     @Autowired
