@@ -39,8 +39,7 @@ public class AccountService {
     }
 
     public Mono<String> addLinkedAccount(Long id, Account linkedAccount) {
-        return this.findById(id).publishOn(Schedulers.boundedElastic()).map(accountOptional ->
-            {
+        return this.findById(id).publishOn(Schedulers.boundedElastic()).map(accountOptional -> {
                 if (accountOptional.isPresent()) {
                     // Initialize linkedAccounts if it's null
                     var account = accountOptional.get();
