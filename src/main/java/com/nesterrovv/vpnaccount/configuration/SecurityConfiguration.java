@@ -24,7 +24,8 @@ public class SecurityConfiguration {
         http.csrf(AbstractHttpConfigurer::disable)
             .sessionManagement(config -> config.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(config -> config
-                .requestMatchers("/subscription/**").hasAuthority("USER")
+                .requestMatchers("/subscription/api-docs/**").permitAll()
+                .requestMatchers("/subscription/accounts/**").hasAuthority("USER")
                 .anyRequest().authenticated()
             )
             .addFilterBefore(
